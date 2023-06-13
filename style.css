@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  }
+
+  .img1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    width: 100%;
+    
+  }
+  .center1{
+    text-align: center;
+  }
+  button{
+    border-radius: 12px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vyber {
+    background-color: rgb(32, 32, 186);
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0%;
+
+  }
+  .nodec{
+   color: currentColor;
+    
+  }
+
+  .vyber:hover {
+    background-color: lightblue;
+    transition: 0.5.s;
+  }
+
+  footer {
+
+    background-color: blue;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+
+  .border {
+    border: 2px solid black;
+  }
+
+  @media screen and (min-width: 576px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3766cc;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .dflex{
+    display: flex;
+  }
